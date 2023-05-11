@@ -15,6 +15,6 @@ Get the value of the `counter` in `namespace`.
 Get the values of all `counters` in `namespace`.
 
 
-#### Locust results with 500 concurrent writers
+#### Locust results with 500 concurrent writers (using better-sqlite3, which blocks the main thread)
 
 ![image](ts-letscount-better-sqlite3.png)
