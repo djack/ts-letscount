@@ -5,13 +5,13 @@ Let's Count is my version of "hello world" for learning about new languages and 
 
 Endpoints: 
 
-PUT /:namespace/:counter
+##### PUT /:namespace/:counter
 Increment the `counter` in `namespace`. If the counter doesn't exist, create it and set the value to 1. If the namespace doesn't exist, create it. Return the value of the count after the increment.
 
-GET /:namespace/:counter
+##### GET /:namespace/:counter
 Get the value of the `counter` in `namespace`.
 
-GET /namespace
+##### GET /namespace
 Get the values of all `counters` in `namespace`.
 
 
