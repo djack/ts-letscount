@@ -1,14 +1,10 @@
 import express, { Request, Response } from 'express';
 import db from './database/db';
-import CountRow from "./database/interfaces"
-import CountResponse from "./interfaces/ResponseInterfaces"
-import internal from "stream";
+import CountRow from "./database/interfaces";
+import { CountResponse, notFoundResponse, badStrings } from "./interfaces/ResponseInterfaces";
 
 const app = express();
 const port = 3000;
-
-const notFoundResponse: CountResponse = {err: "Not Found", data: null};
-const badStrings: CountResponse = {err: "Namespace and Counter must both be nonempty and less than 64 characters long.", data: null};
 
 app.get('/:namespace/:counter', (req: Request, res: Response<CountResponse>) => {
   const { namespace, counter } = req.params;
