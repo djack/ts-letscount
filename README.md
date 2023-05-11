@@ -11,7 +11,7 @@ Increment the `counter` in `namespace`. If the counter doesn't exist, create it 
 ##### GET /:namespace/:counter
 Get the value of the `counter` in `namespace`.
 
-##### GET /namespace
+##### GET /:namespace
 Get the values of all `counters` in `namespace`.
 
 
